@@ -16,14 +16,15 @@ String.prototype.repeat = function(num) {
   };
 
   $(function() {
-  
+
+
     // Todo list
     $(".todo li").click(function() {
         $(this).toggleClass("todo-done");
     });
 
     // Custom Select
-    $("select[name='herolist']").selectpicker({style: 'btn-primary', menuStyle: 'dropdown-inverse'});
+    $(".herolist").selectpicker({style: 'btn-primary', menuStyle: 'dropdown-inverse'});
 
     // Tooltips
     $("[data-toggle=tooltip]").tooltip("show");
@@ -42,9 +43,6 @@ String.prototype.repeat = function(num) {
         range: "min"
       }).addSliderSegments($slider.slider("option").max);
     }
-
-    // Placeholders for input/textarea
-    $("input, textarea").placeholder();
 
     // Make pagination demo work
     $(".pagination a").on('click', function() {
