@@ -70,9 +70,9 @@
         $msg .= "--$boundary \n";
 
         // anexo
-        $msg .= "Content-Type: ".$arquivo["type"]."; name="".$arquivo['name']."" \n";
+        $msg .= "Content-Type: ".$arquivo["type"]."; name=".$arquivo['name']. " \n";
         $msg .= "Content-Transfer-Encoding: base64 \n";
-        $msg .= "Content-Disposition: attachment; filename="".$arquivo['name']."" \r\n";
+        $msg .= "Content-Disposition: attachment; filename=".$arquivo['name']." \r\n";
         $msg .= "$anexo \n";
         $msg .= "--$boundary \n";
 
