@@ -61,7 +61,7 @@
         // msg
         $msg  = "--$boundary\n";
         $msg .= "Content-Type: text/plain; charset='utf-8'\n";
-        $msg = "h2. Abertura de chamado";
+        $msg .= "h2. Abertura de chamado";
         $msg .= "{panel:title=Local do problema|borderStyle=solid|borderColor=#ccc|titleBGColor=#ececec|bgColor=#FFFFFF}$local{panel}";
         $msg .= "{panel:title=Funcionalidade|borderStyle=solid|borderColor=#ccc|titleBGColor=#ececec|bgColor=#FFFFFF}$funcionalidade{panel}";
         $msg .= "{panel:title=Classificação|borderStyle=solid|borderColor=#ccc|titleBGColor=#ececec|bgColor=#FFFFFF}$classificacao{panel}";
@@ -76,7 +76,7 @@
         $msg .= "$anexo \n";
         $msg .= "--$boundary \n";
 
-        
+
         require "config.php";
         mail($jiraEmail, "Bug Perceptool - date("d/m/y H:i")", $msg, $headers);
       ?>
