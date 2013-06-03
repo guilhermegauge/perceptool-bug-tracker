@@ -1,0 +1,18 @@
+.head-top {
+  background: url(../images/icons/bug-icon.png) no-repeat;
+  padding-left: 40px;
+  background-position: 0px 4px;
+}
+
+.mtop {
+  margin-top: 30px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.minimargin {
+  margin-top: 5px;
+}

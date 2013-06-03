@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Flat UI</title>
+    <title>Perceptool - Abertura de chamados</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
@@ -10,7 +10,7 @@
 
     <!-- Loading Flat UI -->
     <link href="css/flat-ui.css" rel="stylesheet">
-
+    <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
@@ -20,16 +20,40 @@
   </head>
   <body>
     <div class="container">
-      <div class="demo-headline">
-        <h1 class="demo-logo">
-          <div class="logo"></div>
-          Flat UI
-          <small>Free Web User Interface Kit</small>
-        </h1>
-      </div> <!-- /demo-headline -->
 
-      <h1>Basic elements</h1>
-      <h3 class="demo-panel-title">Buttons</h3>
+    
+
+      <h1 class="head-top">Abertura de chamados</h1>
+      
+       <div class="row mtop">
+        <div class="span4">
+          <label> Local do problema </label>
+          <select name="herolist" value="0" class="select-block span3">
+            <option value="0" selected="selected">Escolher</option>
+            <option value="1">Spider Man</option>
+            <option value="2">Wolverine</option>
+            <option value="3">Captain America</option>
+            <option value="X-Men">X-Men</option>
+            <option value="Crocodile">Crocodile</option>
+          </select>
+        </div>
+        <div class="span4">
+          <label> Funcionalidade 
+          <input type="text" value="" name="funcionalidade" class="span4 minimargin" />
+          </label>
+        </div>
+        <div class="span4">
+          <label> Funcionalidade </label>
+          <select name="herolist" value="X-Men" class="select-block span3">
+            <option value="0" selected="selected">Escolher</option>
+            <option value="1">Spider Man</option>
+            <option value="2">Wolverine</option>
+            <option value="3">Captain America</option>
+            <option value="X-Men">X-Men</option>
+            <option value="Crocodile">Crocodile</option>
+          </select>
+        </div>
+    </div>
 
       <div class="row demo-row">
         <div class="span3">
@@ -758,8 +782,7 @@
     <script src="js/flatui-radio.js"></script>
     <script src="js/jquery.tagsinput.js"></script>
     <script src="js/jquery.placeholder.js"></script>
-    <script src="js/jquery.stacktable.js"></script>
-    <script src="http://vjs.zencdn.net/c/video.js"></script>
+    <script src="js/jquery.stacktable.js"></script>    
     <script src="js/application.js"></script>
   </body>
 </html>
