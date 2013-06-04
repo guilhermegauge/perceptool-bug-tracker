@@ -1,5 +1,5 @@
 <?php
 
-$jiraEmail = "guilherme.pontes@gauge.com.br";
+$jiraEmail = "suporte.perceptool@gauge.com.br";
 
 ?>
